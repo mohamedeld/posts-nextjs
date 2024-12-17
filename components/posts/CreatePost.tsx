@@ -55,6 +55,7 @@ const CreatePost = () => {
                 title: 'Post has been created successfully',
                 description: `created`,
             });
+            setOpen(false)
             router.refresh()
             form.reset()
 
@@ -72,7 +73,7 @@ const CreatePost = () => {
   return (
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger>
-        <Button>Add Post</Button>
+        <Button variant={"outline"}>Add Post</Button>
       </DialogTrigger>
       <DialogContent>
         <DialogHeader>

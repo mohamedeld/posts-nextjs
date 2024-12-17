@@ -113,7 +113,7 @@ const PostUpdate = ({data}:IProps) => {
             )}
           />
           <div className="flex justify-end items-end gap-2">
-          <Button variant={"outline"} className=''>{isSubmitting ? (
+          <Button disabled={isSubmitting} variant={"outline"} className=''>{isSubmitting ? (
                     <>
                     <Loader2 className="animate-spin" />
                     Please wait

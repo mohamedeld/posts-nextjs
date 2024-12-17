@@ -59,7 +59,7 @@ const DeletePost = ({post}:IProps) => {
           <DialogTitle>Delete Post</DialogTitle>
           <DialogDescription>Do you want to delete this post</DialogDescription>
         </DialogHeader>
-        <Button variant={"destructive"} onClick={()=>handleDelete()}>{
+        <Button disabled={loading} variant={"destructive"} onClick={()=>handleDelete()}>{
             loading ? (
                 <>
                     <Loader2 className="animate-spin" />

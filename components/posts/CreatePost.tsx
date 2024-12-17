@@ -124,7 +124,7 @@ const CreatePost = () => {
               )}
             />
             <div className="flex justify-end items-end">
-              <Button className="">{
+              <Button disabled={isSubmitting} className="">{
                 isSubmitting ? (
                     <>
                     <Loader2 className="animate-spin" />
